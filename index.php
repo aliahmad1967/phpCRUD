@@ -15,15 +15,17 @@ require_once 'auth_helper.php';
     
     <div class="hero">
         <div class="container animate-fade">
-            <span style="background: rgba(99, 102, 241, 0.2); color: #818cf8; padding: 0.5rem 1.5rem; border-radius: 999px; font-weight: 800; font-size: 0.9rem; margin-bottom: 2rem; display: inline-block; border: 1px solid rgba(99, 102, 241, 0.3);">
+            <span style="background: rgba(249, 115, 22, 0.2); color: #fb923c; padding: 0.5rem 1.5rem; border-radius: 999px; font-weight: 800; font-size: 0.9rem; margin-bottom: 2rem; display: inline-block; border: 1px solid rgba(249, 115, 22, 0.3);">
                 NEW VERSION 2.0 IS HERE
             </span>
-            <h1>The Next Generation of <br><span style="background: linear-gradient(to right, #6366f1, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Content Management</span></h1>
+            <h1>The Next Generation of <br><span style="background: linear-gradient(to right, #f97316, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Content Management</span></h1>
             <p>Empower your digital presence with our ultra-secure, blazing fast, and incredibly intuitive PHP CRUD engine.</p>
             
             <div class="hero-buttons">
                 <a href="login.php" class="btn btn-lg btn-primary"><i class="fas fa-bolt"></i> Get Started Free</a>
-                <a href="register.php" class="btn btn-lg btn-outline"><i class="fas fa-user-plus"></i> Join Community</a>
+                <a href="register.php" class="btn btn-lg btn-outline" style="border-color: #f97316; color: #f97316;">
+                    <i class="fas fa-user-plus"></i> Join Community
+                </a>
             </div>
         </div>
     </div>
