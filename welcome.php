@@ -37,27 +37,33 @@ $user = getCurrentUser();
                 
                 <div class="stats">
                     <div class="stat-card">
-                        <h3><i class="fas fa-user-circle"></i> Profile</h3>
-                        <p><strong>Username:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
-                        <p><strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+                        <i class="fas fa-id-card"></i>
+                        <h3>USER PROFILE</h3>
+                        <p><?php echo htmlspecialchars($user['username']); ?></p>
+                        <span style="color: var(--text-muted); font-size: 0.85rem;"><?php echo htmlspecialchars($user['email']); ?></span>
                     </div>
                     
                     <div class="stat-card">
-                        <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
-                        <div style="display: flex; gap: 0.5rem; flex-direction: column;">
-                            <a href="posts.php?action=create" class="btn btn-primary btn-small">
-                                <i class="fas fa-plus"></i> New Post
+                        <i class="fas fa-magic"></i>
+                        <h3>QUICK ACTIONS</h3>
+                        <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+                            <a href="posts.php?action=create" class="btn btn-primary btn-small" style="padding: 0.75rem 1rem;">
+                                <i class="fas fa-plus"></i> Post
                             </a>
-                            <a href="items.php?action=create" class="btn btn-primary btn-small">
-                                <i class="fas fa-plus"></i> New Item
+                            <a href="items.php?action=create" class="btn btn-primary btn-small" style="padding: 0.75rem 1rem; background: var(--secondary);">
+                                <i class="fas fa-plus"></i> Item
                             </a>
                         </div>
                     </div>
 
                     <div class="stat-card">
-                        <h3><i class="fas fa-database"></i> content</h3>
-                        <a href="posts.php" class="btn btn-small">Manage Posts</a>
-                        <a href="items.php" class="btn btn-small">Manage Items</a>
+                        <i class="fas fa-layer-group"></i>
+                        <h3>TOTAL ASSETS</h3>
+                        <p>Multi-Module</p>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <a href="posts.php" class="nav-link" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">View Posts</a>
+                            <a href="items.php" class="nav-link" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">View Items</a>
+                        </div>
                     </div>
                 </div>
                 

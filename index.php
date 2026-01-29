@@ -15,16 +15,15 @@ require_once 'auth_helper.php';
     
     <div class="hero">
         <div class="container animate-fade">
-            <h1><i class="fas fa-rocket"></i> Manage Your Content With Ease</h1>
-            <p>A powerful, secure, and modern PHP CRUD application for managing users, posts, and items efficiently.</p>
+            <span style="background: rgba(99, 102, 241, 0.2); color: #818cf8; padding: 0.5rem 1.5rem; border-radius: 999px; font-weight: 800; font-size: 0.9rem; margin-bottom: 2rem; display: inline-block; border: 1px solid rgba(99, 102, 241, 0.3);">
+                NEW VERSION 2.0 IS HERE
+            </span>
+            <h1>The Next Generation of <br><span style="background: linear-gradient(to right, #6366f1, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Content Management</span></h1>
+            <p>Empower your digital presence with our ultra-secure, blazing fast, and incredibly intuitive PHP CRUD engine.</p>
             
             <div class="hero-buttons">
-                <a href="login.php" class="btn btn-lg btn-light"><i class="fas fa-tachometer-alt"></i> Go to Dashboard</a>
-                <?php if (isLoggedIn()): ?>
-                    <a href="logout.php" class="btn btn-lg btn-outline"><i class="fas fa-sign-out-alt"></i> Logout</a>
-                <?php else: ?>
-                    <a href="register.php" class="btn btn-lg btn-outline"><i class="fas fa-user-plus"></i> Create Account</a>
-                <?php endif; ?>
+                <a href="login.php" class="btn btn-lg btn-primary"><i class="fas fa-bolt"></i> Get Started Free</a>
+                <a href="register.php" class="btn btn-lg btn-outline"><i class="fas fa-user-plus"></i> Join Community</a>
             </div>
         </div>
     </div>
