@@ -30,13 +30,33 @@
 }
 
 [data-theme='dark'] {
-    --bg-main: #0f172a;
-    --bg-glass: rgba(30, 41, 59, 0.8);
+    --bg-main: #0b0f1a;
+    --bg-glass: rgba(15, 23, 42, 0.9);
     --card-bg: #1e293b;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --border: rgba(51, 65, 85, 0.8);
-    --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+    --text-main: #f1f5f9;
+    --text-muted: #cbd5e1;
+    --border: rgba(51, 65, 85, 0.9);
+    --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+}
+
+[data-theme='dark'] .stat-card, 
+[data-theme='dark'] .feature-card, 
+[data-theme='dark'] .data-table tr:not(thead tr) {
+    background: #1e293b;
+    color: var(--text-main);
+}
+
+[data-theme='dark'] .form-group input, 
+[data-theme='dark'] .form-group textarea, 
+[data-theme='dark'] select.form-control {
+    background: #0f172a;
+    color: var(--text-main);
+    border-color: var(--border);
+}
+
+[data-theme='dark'] .nav-link:hover, 
+[data-theme='dark'] .nav-link.active {
+    background: rgba(249, 115, 22, 0.15);
 }
 
 * {
