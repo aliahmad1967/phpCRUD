@@ -103,7 +103,7 @@ while ($row = $result->fetch_assoc()) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container animate-fade">
         <div class="header">
             <h1>Manage Items</h1>
             <nav>

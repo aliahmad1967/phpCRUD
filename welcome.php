@@ -17,7 +17,7 @@ $user = getCurrentUser();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container animate-fade">
         <div class="header">
             <h1>Welcome, <?php echo htmlspecialchars($user['username']); ?>!</h1>
             <nav>
@@ -29,20 +29,33 @@ $user = getCurrentUser();
         
         <div class="content">
             <div class="welcome-card">
-                <h2>Dashboard</h2>
-                <p>Welcome to your PHP CRUD application dashboard!</p>
+                <h2 style="margin-bottom: 2rem; color: var(--primary-color);">
+                    <i class="fas fa-chart-line"></i> Dashboard Overview
+                </h2>
                 
                 <div class="stats">
                     <div class="stat-card">
-                        <h3>User Information</h3>
+                        <h3><i class="fas fa-user-circle"></i> Profile</h3>
                         <p><strong>Username:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
                         <p><strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
                     </div>
                     
                     <div class="stat-card">
-                        <h3>Quick Actions</h3>
-                        <a href="posts.php" class="btn">Manage Posts</a>
-                        <a href="posts.php?action=create" class="btn btn-primary">Create New Post</a>
+                        <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
+                        <div style="display: flex; gap: 0.5rem; flex-direction: column;">
+                            <a href="posts.php?action=create" class="btn btn-primary btn-small">
+                                <i class="fas fa-plus"></i> New Post
+                            </a>
+                            <a href="items.php?action=create" class="btn btn-primary btn-small">
+                                <i class="fas fa-plus"></i> New Item
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3><i class="fas fa-database"></i> content</h3>
+                        <a href="posts.php" class="btn btn-small">Manage Posts</a>
+                        <a href="items.php" class="btn btn-small">Manage Items</a>
                     </div>
                 </div>
                 

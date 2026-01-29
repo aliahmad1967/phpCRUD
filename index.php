@@ -14,22 +14,22 @@ require_once 'auth_helper.php';
 <body>
     
     <div class="hero">
-        <div class="container">
-            <h1>Manage Your Content With Ease</h1>
+        <div class="container animate-fade">
+            <h1><i class="fas fa-rocket"></i> Manage Your Content With Ease</h1>
             <p>A powerful, secure, and modern PHP CRUD application for managing users, posts, and items efficiently.</p>
             
             <div class="hero-buttons">
-                <a href="login.php" class="btn btn-lg btn-light">Go to Dashboard</a>
+                <a href="login.php" class="btn btn-lg btn-light"><i class="fas fa-tachometer-alt"></i> Go to Dashboard</a>
                 <?php if (isLoggedIn()): ?>
-                    <a href="logout.php" class="btn btn-lg btn-outline">Logout</a>
+                    <a href="logout.php" class="btn btn-lg btn-outline"><i class="fas fa-sign-out-alt"></i> Logout</a>
                 <?php else: ?>
-                    <a href="register.php" class="btn btn-lg btn-outline">Create Account</a>
+                    <a href="register.php" class="btn btn-lg btn-outline"><i class="fas fa-user-plus"></i> Create Account</a>
                 <?php endif; ?>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container animate-fade" style="margin-top: -3rem;">
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">

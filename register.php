@@ -7,29 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form-container">
-            <h2>Create Account</h2>
+    <div class="container animate-fade" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+        <div class="form-container" style="width: 100%; max-width: 450px;">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2rem; color: var(--primary-color);">Create Account</h2>
+                <p style="color: var(--text-muted);">Join our community today</p>
+            </div>
             <form action="register_process.php" method="POST">
                 <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Minimum 6 characters" required>
                 </div>
                 <div class="form-group">
-                    <label for="confirm_password">Confirm Password:</label>
-                    <input type="password" id="confirm_password" name="confirm_password" required>
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Repeat your password" required>
                 </div>
-                <button type="submit" class="btn">Register</button>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
             </form>
-            <p class="link">Already have an account? <a href="login.php">Login here</a></p>
+            <p class="link" style="margin-top: 1.5rem;">Already have an account? <a href="login.php">Login here</a></p>
+            <p class="link"><a href="index.php">Back to Home</a></p>
         </div>
     </div>
 </body>
