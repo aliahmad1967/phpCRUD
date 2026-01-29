@@ -44,6 +44,33 @@ A modern, secure, and responsive PHP CRUD (Create, Read, Update, Delete) applica
    - **Username:** `admin`
    - **Password:** `admin123`
 
+## 📖 User Guide
+
+### 1. Getting Started
+- Navigate to the home page (`index.php`).
+- Click on **"Go to Dashboard"** to proceed to the login screen.
+- If you don't have an account, click **"Create Account"** to register.
+
+### 2. Dashboard Overview
+Once logged in, you will be redirected to the **Welcome Dashboard**. Here you can:
+- See your account details.
+- View a summary of your recent posts.
+- Use the quick action buttons to manage content.
+
+### 3. Managing Posts
+- Click **"Manage Posts"** from the dashboard or navigation menu.
+- **Create:** Click "Create New Post", fill in the title, content, and status, then save.
+- **Edit:** Click the "Edit" button next to any post to modify its details.
+- **Delete:** Click the "Delete" button to remove a post (requires confirmation).
+
+### 4. Managing Items (Inventory)
+- Click **"Manage Items"** in the navigation menu.
+- **Add Item:** Click "Add New Item" to record a new product with its price and description.
+- **Update/Delete:** Similar to posts, you can modify or remove items from your list.
+
+### 5. Logging Out
+- To securely end your session, click the **"Logout"** link in the navigation bar from any page.
+
 ## 📂 Project Structure
 
 - `index.php` - Modern landing page
