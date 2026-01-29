@@ -107,8 +107,10 @@ while ($row = $result->fetch_assoc()) {
         <div class="header">
             <h1>Manage Items</h1>
             <nav>
-                <a href="welcome.php" class="nav-link">Home</a>
-                <a href="items.php" class="nav-link active">Manage Items</a>
+                <a href="index.php" class="nav-link">Home</a>
+                <a href="welcome.php" class="nav-link">Dashboard</a>
+                <a href="posts.php" class="nav-link">Posts</a>
+                <a href="items.php" class="nav-link active">Items</a>
                 <a href="logout.php" class="nav-link">Logout</a>
             </nav>
         </div>

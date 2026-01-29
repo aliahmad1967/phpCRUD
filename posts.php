@@ -114,8 +114,10 @@ $draft_posts = count(array_filter($posts, function($post) { return $post['status
         <div class="header">
             <h1>Manage Posts</h1>
             <nav>
-                <a href="welcome.php" class="nav-link">Home</a>
-                <a href="posts.php" class="nav-link active">Manage Posts</a>
+                <a href="index.php" class="nav-link">Home</a>
+                <a href="welcome.php" class="nav-link">Dashboard</a>
+                <a href="posts.php" class="nav-link active">Posts</a>
+                <a href="items.php" class="nav-link">Items</a>
                 <a href="logout.php" class="nav-link">Logout</a>
             </nav>
         </div>

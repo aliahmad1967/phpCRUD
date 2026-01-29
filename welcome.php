@@ -21,8 +21,10 @@ $user = getCurrentUser();
         <div class="header">
             <h1>Welcome, <?php echo htmlspecialchars($user['username']); ?>!</h1>
             <nav>
-                <a href="welcome.php" class="nav-link">Home</a>
-                <a href="items.php" class="nav-link">Manage Items</a>
+                <a href="index.php" class="nav-link">Home</a>
+                <a href="welcome.php" class="nav-link active">Dashboard</a>
+                <a href="posts.php" class="nav-link">Posts</a>
+                <a href="items.php" class="nav-link">Items</a>
                 <a href="logout.php" class="nav-link">Logout</a>
             </nav>
         </div>
