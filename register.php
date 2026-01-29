@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - PHP CRUD</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="theme.js" defer></script>
 </head>
 <body>
+    <button id="theme-toggle" class="btn btn-light" style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000; width: 50px; height: 50px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center; background: var(--bg-glass); border: 1px solid var(--border); color: var(--primary);">
+        <i class="fas fa-moon"></i>
+    </button>
     <div class="container animate-fade" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
         <div class="form-container" style="width: 100%; max-width: 450px;">
             <div style="text-align: center; margin-bottom: 2rem;">

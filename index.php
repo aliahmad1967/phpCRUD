@@ -10,9 +10,14 @@ require_once 'auth_helper.php';
     <title>PHP CRUD - Modern Application</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="theme.js" defer></script>
 </head>
 <body>
     
+    <button id="theme-toggle" class="btn btn-light" style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000; width: 50px; height: 50px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center; background: var(--bg-glass); border: 1px solid var(--border); color: var(--primary);">
+        <i class="fas fa-moon"></i>
+    </button>
+
     <div class="hero">
         <div class="container animate-fade">
             <span style="background: rgba(249, 115, 22, 0.2); color: #fb923c; padding: 0.5rem 1.5rem; border-radius: 999px; font-weight: 800; font-size: 0.9rem; margin-bottom: 2rem; display: inline-block; border: 1px solid rgba(249, 115, 22, 0.3);">

@@ -108,8 +108,13 @@ $draft_posts = count(array_filter($posts, function($post) { return $post['status
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Posts - PHP CRUD</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="theme.js" defer></script>
 </head>
 <body>
+    <button id="theme-toggle" class="btn btn-light" style="position: fixed; bottom: 2rem; right: 2rem; z-index: 2000; width: 60px; height: 60px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center; background: var(--bg-glass); border: 1px solid var(--border); color: var(--primary); box-shadow: var(--shadow-lg);">
+        <i class="fas fa-moon"></i>
+    </button>
     <div class="container animate-fade">
         <div class="header">
             <h1>Manage Posts</h1>
